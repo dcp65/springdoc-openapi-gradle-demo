@@ -8,7 +8,7 @@ plugins {
 group 'org.example'
 version '1.0.0'
 
-sourceCompatibility = 1.8
+sourceCompatibility = 11
 
 repositories {
     mavenCentral()
@@ -19,16 +19,13 @@ springBoot {
 }
 
 dependencies {
-    compile 'org.springframework.boot:spring-boot-dependencies:2.2.5.RELEASE'
-    compile 'org.springframework.boot:spring-boot-starter-web:2.2.5.RELEASE'
+    implementation 'org.springframework.boot:spring-boot-starter-web:2.2.5.RELEASE'
     testCompile 'junit:junit:4.12'
-    compile 'javax.validation:validation-api:2.0.1.Final'
-    compile 'org.springframework.data:spring-data-commons:2.2.5.RELEASE'
-    compile 'org.springframework.data:spring-data-mongodb:2.2.5.RELEASE'
-    compile 'org.springframework.boot:spring-boot-starter-data-mongodb-reactive:2.2.5.RELEASE'
-    compile 'io.swagger.core.v3:swagger-annotations:2.1.1'
-    compile 'io.swagger.core.v3:swagger-models:2.1.1'
-    compile 'org.springdoc:springdoc-openapi-webflux-core:1.2.32'
-    compile 'org.springdoc:springdoc-openapi-core:1.1.49'
-
+    implementation 'javax.validation:validation-api:2.0.1.Final'
+    implementation 'org.springframework.data:spring-data-commons:2.2.5.RELEASE'
+    implementation 'org.springframework.data:spring-data-mongodb:2.2.5.RELEASE'
+    implementation 'org.springframework.boot:spring-boot-starter-data-mongodb-reactive:2.2.5.RELEASE'
+    implementation 'io.swagger.core.v3:swagger-annotations:2.1.1'
+    implementation 'io.swagger.core.v3:swagger-models:2.1.1'
+    implementation 'org.springdoc:springdoc-openapi-webflux-core:1.2.33'
 }
