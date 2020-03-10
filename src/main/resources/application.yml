@@ -20,5 +20,4 @@ spring:
         content:
           enabled: true
           paths: /webjars/swagger-ui/**.*
-springdoc:
-  version: '1.2.33'
+
